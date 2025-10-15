@@ -1,0 +1,116 @@
+/* sections/_experience.css */
+.experience {
+    background: var(--card-background);
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--border-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 1rem 0;
+    position: relative;
+    width: 50%;
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 25px;
+    z-index: 1;
+    border: 3px solid white;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+.timeline-date {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.timeline-content p {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.timeline-content ul li {
+    font-size: 0.95rem;
+    color: var(--light-text-color);
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline-content ul li::before {
+    content: '\2022';
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}

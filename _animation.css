@@ -1,0 +1,54 @@
+/* _animation.css - MÃ ĐÃ SỬA LỖI CÚ PHÁP */
+
+/* --- Hiệu ứng Fade-In từ dưới lên (Dùng cho cuộn) --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Kéo từ dưới lên 30px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Hiệu ứng Nhịp đập (Dùng cho Nút CTA) --- */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+/* Áp dụng cho nút chính */
+.btn-primary.animated {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* --- Hiệu ứng Typing/Cursor cho Tiêu đề (Tùy chọn) --- */
+/* Keyframes cho hiệu ứng gõ chữ (typing) */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Keyframes cho con trỏ (cursor) nhấp nháy */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+.typing-text {
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .08em; 
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* --- KEYFRAMES CHO ICON RƠI --- */
+@keyframes fall {
+    0% { transform: translateY(-10vh) scale(1); opacity: 0.9; }
+    100% { transform: translateY(100vh) scale(0.6); opacity: 0; }
+}

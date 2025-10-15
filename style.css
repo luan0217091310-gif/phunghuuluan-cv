@@ -1,0 +1,12 @@
+@import url('_base.css'); 
+@import url('_animation.css'); /* PHẢI NẰM ĐẦU để các animation được định nghĩa trước khi dùng */
+
+@import url('sections/_header.css');
+@import url('sections/_hero.css');
+@import url('sections/_about.css');
+@import url('sections/_skills.css');
+@import url('sections/_experience.css');
+@import url('sections/_projects.css');
+@import url('sections/_contact.css');
+@import url('_footer.css');
+@import url('_responsive.css');

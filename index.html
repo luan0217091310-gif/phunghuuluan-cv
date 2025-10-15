@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio của Phùng Hữu Luân</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Phùng Hữu Luân</a>
+        <nav class="navbar">
+            <a href="#about"><i class="fas fa-user"></i> Về tôi</a>
+            <a href="#skills"><i class="fas fa-tools"></i> Kỹ năng</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i> Kinh nghiệm</a>
+            <a href="#projects"><i class="fas fa-folder-open"></i> Dự án</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a>
+        </nav>
+        <div class="menu-icon"><i class="fas fa-bars"></i></div> 
+    </header>
+
+    
+    <section id="hero" class="hero">
+        
+        <video autoplay muted loop id="hero-video-bg">
+            <source src="assets/videos/background-effect.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        
+        <div id="snow-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h3>Xin chào, tên tôi là</h3>
+                <h1 class="typing-text-container">
+                    <span class="typing-text">Phùng Hữu Luân</span>
+                </h1>
+                </div>
+                <p>Tôi là một sinh viên CNTT đam mê phát triển Web, Mạng, AI tại Đại học Tôn Đức Thắng, luôn tìm kiếm cơ hội để xây dựng các giải pháp hiệu quả và tối ưu hóa trải nghiệm người dùng.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary animated">Liên hệ ngay</a> 
+                    <a href="duong_dan_den_cv_cua_ban.pdf" download class="btn btn-secondary">Tải CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/4.jpg" alt="Ảnh đại diện của Phùng Hữu Luân"> 
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="section about-me hidden">
+        <h2 class="section-title">Về tôi</h2>
+        <div class="about-content">
+            <p>Tôi là một sinh viên năm 2 tại Khoa Công nghệ Thông tin, Trường Đại học Tôn Đức Thắng. Với niềm đam mê sâu sắc về lập trình và thiết kế, tôi đã và đang không ngừng học hỏi, trau dồi kiến thức về các công nghệ phát triển web hiện đại. Tôi đặc biệt yêu thích Front-end Development và luôn cố gắng tạo ra những giao diện người dùng trực quan, thân thiện và đáp ứng.</p>
+            <div class="about-details">
+                <p><i class="fas fa-calendar-alt"></i> Ngày sinh: 13/10/2006</p>
+                <p><i class="fas fa-graduation-cap"></i> Trình độ: Sinh viên Đại học</p>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ tạm trú : TP. Hồ Chí Minh</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:luan0017091310@gmail.com">luan0017091310@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="section skills hidden">
+        <h2 class="section-title">Kỹ năng</h2>
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Ngôn ngữ lập trình</h3>
+            <div class="skill-grid">
+                <div class="skill-item">JavaScript (ES6+)</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">SQL</div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frameworks & Thư viện</h3>
+            <div class="skill-grid">
+                </div>
+        </div>
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Công cụ & Database</h3>
+            <div class="skill-grid">
+                <div class="skill-item">Git & GitHub</div>
+                <div class="skill-item">VS Code</div>
+                <div class="skill-item">MySQL</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="experience" class="section experience hidden">
+        <h2 class="section-title">Kinh nghiệm & Học vấn</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">09/2024 - Hiện tại</div>
+                <div class="timeline-content">
+                    <h3>Sinh viên ngành Công nghệ Thông tin</h3>
+                    <p>Trường Đại học Tôn Đức Thắng</p>
+                    <ul>
+                        <li>GPA: [chưa tiết lộ ]</li>
+                        <li>Các môn học đang trong quá trình học tập : Cơ sở dữ liệu, Lập trình hướng đối tượng.</li>
+                        <li>Tham gia CLB lập trình của trường (không có).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="section projects hidden">
+        <h2 class="section-title">Dự án của tôi</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/images/1.jpg" alt="Hình ảnh dự án 1">
+                <div class="project-info">
+                    <h3>Dự án tạo một CV đáng xem</h3>
+                    <p>Dự án này là trang web bạn đang xem! Được xây dựng để giới thiệu kỹ năng và kinh nghiệm.</p>
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank" class="btn btn-small"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/your-github/project-repo" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="section contact hidden">
+        <h2 class="section-title">Liên hệ</h2>
+        <div class="contact-content">
+            <p>Bạn có một dự án tiềm năng hay muốn kết nối? Đừng ngần ngại liên hệ với tôi qua các kênh dưới đây:</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:524h0167@student.tdtu.edu.vn">524h0167@student.tdtu.edu.vn</a></p>
+                <p><i class="fas fa-phone"></i> Điện thoại: <a href="tel:+84347043129">+84347043129</a></p>
+            </div>
+                <form action="YOUR_FORM_ENDPOINT_URL" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Tên của bạn" required>
+                    <input type="email" name="_replyto" placeholder="Email của bạn" required>
+                    <textarea name="message" placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+
+            <div class="bank-info">
+                <h3>Thông tin tài khoản (Tùy chọn)</h3>
+                <p><i class="fas fa-university"></i> Ngân hàng: **Mbank**</p>
+                <p><i class="fas fa-money-check-alt"></i> Số tài khoản: **0347043129**</p>
+                <p><i class="fas fa-user-circle"></i> Chủ tài khoản: **PHUNG HUU LUAN**</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://web.facebook.com/luan.phunghuu.90" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/luan.phunghuu.90" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://web.facebook.com/luan.phunghuu.90" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p>&copy; 2025 Phùng Hữu Luân. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // --- JAVASCRIPT ANIMATION ICON RƠI ---
+        const heroSection = document.getElementById('hero');
+        const snowOverlay = document.getElementById('snow-overlay');
+
+        // Các icon Font Awesome bạn muốn sử dụng
+        const cuteIcons = [
+            'fa-heart', 
+            'fa-star',  
+            'fa-face-smile', 
+            'fa-thumbs-up', 
+        ];
+
+        // Các màu sắc ngẫu nhiên cho icon
+        const iconColors = [
+            '#FFC0CB', // Hồng nhạt
+            '#FF69B4', // Hồng đậm
+            '#FFFF00', // Vàng sáng
+            '#FFFFFF', // Trắng
+            '#ADD8E6', // Xanh nhạt
+        ];
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            // 1. Tạo Icon ngẫu nhiên
+            const randomIconClass = cuteIcons[Math.floor(Math.random() * cuteIcons.length)];
+            const iconElement = document.createElement('i');
+            iconElement.classList.add('fas', randomIconClass); 
+            particle.appendChild(iconElement);
+
+            // 2. Chọn màu và kích thước ngẫu nhiên
+            iconElement.style.color = iconColors[Math.floor(Math.random() * iconColors.length)];
+            const size = Math.random() * 18 + 12 + 'px'; // Kích thước 12px - 30px
+            iconElement.style.fontSize = size; 
+
+            // Thêm particle vào lớp phủ tuyết
+            if (snowOverlay) {
+                snowOverlay.appendChild(particle);
+            } else {
+                heroSection.appendChild(particle); // Fallback
+            }
+
+            // 3. Vị trí và thời gian
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.top = -10 + 'vh'; 
+
+            const duration = Math.random() * 8 + 6 + 's'; 
+            particle.style.animationDuration = duration;
+            particle.style.animationDelay = Math.random() * 5 + 's'; 
+            
+            // 4. Xóa hạt
+            particle.addEventListener('animationend', () => {
+                particle.remove();
+            });
+        }
+
+        // Tạo các hạt liên tục
+        setInterval(createParticle, 300); 
+
+
+        // --- JAVASCRIPT HIỆU ỨNG CUỘN (Intersection Observer) ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { 
+            threshold: 0.15 
+        });
+
+        document.querySelectorAll('.hidden').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // JavaScript cho Menu Icon trên Mobile
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
